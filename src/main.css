@@ -1,0 +1,111 @@
+
+	@media only screen 
+    and (max-width: 760px), (min-device-width: 400px) 
+    and (max-device-width: 760px)  {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr {
+        margin: 0 0 1rem 0;
+      }
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+		td {
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 25%;
+		}
+
+		td:before {
+            font-size: 22px;
+			position: absolute;
+			top: 10px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+	    td:nth-of-type(1):before { content: "code"; }
+		td:nth-of-type(2):before { content: "Name"; }
+		td:nth-of-type(3):before { content: "Phone"; }
+		td:nth-of-type(4):before { content: "Currency"; }
+		td:nth-of-type(5):before { content: "languages"; }
+		td:nth-of-type(6):before { content: "Emoji"; }
+		td:nth-of-type(7):before { content: "EmojiU"; }
+		td:nth-of-type(8):before { content: "States"; } 
+    }
+    .title{
+        font-family: verdana,arial,sans-serif;
+        font-size: 2rem;
+        color:#d46e58;
+
+    }
+    #mydiv{
+        margin-top:20px;
+    }
+    body {
+        padding: 50px;
+        margin:auto;
+        position:relative;
+        background: #fdfdfd;
+      }
+      th {
+         padding: 8px; 
+      }
+      table.gridtable {
+        margin: auto;
+        line-height: 18px;
+        font-family: verdana,arial,sans-serif;
+        font-size:11px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    @media only screen 
+    and (min-device-width: 680px) {
+        body {
+            text-align: center;
+        }
+        td{
+            padding: 10px;
+        }
+    }
+    @media only screen 
+    and (max-width: 760px){
+        
+    }
+    button {
+        display: block;
+        background-color: #c4c4c4;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.25rem;
+        min-width: 170px;
+        margin: 15px auto;
+        border-radius: 4px;        
+      }
+      button:hover {
+        border-radius: 4px;        
+        cursor: pointer;
+        background-color: white;
+        color: gray;
+        border: 1px solid gray
+      }
+      
+      
+      
